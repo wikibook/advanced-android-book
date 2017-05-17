@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ToolbarAndTabLayout</string>
+
+    <!-- ActionBar -->
+    <string name="action_settings">Settings</string>
+
+    <!-- TabLayout -->
+    <string name="tab_name_prefix">탭</string>
+    <string name="tab_label1">탭１</string>
+    <string name="tab_label2">탭２</string>
+    <string name="tab_label3">탭３</string>
+
+</resources>

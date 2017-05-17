@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NavigationView</string>
+
+    <!-- Navigation Header -->
+    <string name="navigation_drawer_header_text">헤더 영역</string>
+    <string name="menu_item_title1">메뉴 아이템１</string>
+    <string name="menu_item_title2">메뉴 아이템２</string>
+    <string name="sub_menu_title">서브 메뉴</string>
+    <string name="sub_menu_item_title1">이 앱에 대해서</string>
+    <string name="sub_menu_item_title2">설정</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+</resources>

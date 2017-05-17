@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android{
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    signingConfigs {
+        release {
+            storeFile file("/Users/takahirom/sample.jks")
+            storePassword "sample"
+            keyAlias "android"
+            keyPassword "sample"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.advanced_android.gradlesample"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            // ① 서명 설정
+            signingConfig signingConfigs.release
+            // ② 프로가드를 활성화한다
+            minifyEnabled true
+            // 프로가드 설정 파일을 지정한다
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            // ③ 패키지 이름 끝에 .debug를 추가한다
+            applicationIdSuffix ".debug"
+            // ④ 버전 이름 끝에 -debug를 붙인다
+            versionNameSuffix "-debug"
+        }
+        stage {
+            // ⑤ debug 설정을 이용해 stage 빌드 타입을 만든다
+            initWith(buildTypes.debug)
+        }
+    }
+    productFlavors {
+        pro {
+        }
+        free {
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+}
+

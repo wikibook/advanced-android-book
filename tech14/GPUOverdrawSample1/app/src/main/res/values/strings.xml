@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GPUOverdrawSample1</string>
+    <string name="text_content">샘플 텍스트1\n샘플 텍스트2\n샘플 텍스트3</string>
+</resources>

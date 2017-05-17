@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NewGitHubRepos.iml" filepath="$PROJECT_DIR$/NewGitHubRepos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-mvp/app-mvp.iml" filepath="$PROJECT_DIR$/app-mvp/app-mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-mvvm/app-mvvm.iml" filepath="$PROJECT_DIR$/app-mvvm/app-mvvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-original/app-original.iml" filepath="$PROJECT_DIR$/app-original/app-original.iml" />
+    </modules>
+  </component>
+</project>
